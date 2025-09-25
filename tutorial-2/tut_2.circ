@@ -46,7 +46,9 @@
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool"/>
     <sep/>
-    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="north"/>
+    </tool>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="type" val="output"/>
@@ -662,9 +664,10 @@
     <a name="circuit" val="Register_File"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="8.0"/>
-    <comp lib="0" loc="(140,430)" name="Tunnel">
+    <comp lib="0" loc="(140,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
+      <a name="label" val="WriteEnable"/>
     </comp>
     <comp lib="0" loc="(190,400)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -674,7 +677,7 @@
     </comp>
     <comp lib="0" loc="(270,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="WriteEnable"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(270,90)" name="Tunnel">
       <a name="label" val="CLK"/>
